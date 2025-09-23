@@ -1,0 +1,2 @@
+docker run --name "postgres" --rm -it -e "POSTGRES_DB=datawarehouse" -e "POSTGRES_PASSWORD=H4!b5at+kWls-8yh4Guq" -p "127.0.0.1:5432:5432/tcp" --mount "type=volume,src=postgres-data,dst=/var/lib/postgresql/data/" docker.io/postgres:17
+ 
