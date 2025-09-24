@@ -1,0 +1,17 @@
+# Ejecuta en la terminal
+
+
+.\.venv\Scripts\Activate.ps1
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::InputEncoding  = [System.Text.Encoding]::UTF8
+$env:PYTHONIOENCODING = 'utf-8'
+$env:PYTHONUTF8       = '1'
+
+
+
+### si no funciona lo anterior ejecutar empezando con lo siguiente y después lo anterior
+########## 
+# 1) Crear el venv con Python 3.12 (nota el & al principio)
+
+& "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe" -m venv .venv
