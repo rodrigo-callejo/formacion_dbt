@@ -19,4 +19,10 @@ flags:
 
 models:
   jaffle_shop:
-    +materialized: table
+    staging:
+      +materialized: view
+      stripe:
+        +materialized: table
+    marts:
+      +materialized: table
+    
