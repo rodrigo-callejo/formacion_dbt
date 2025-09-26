@@ -25,5 +25,6 @@
 
   // Opcional: variables desde .env y guardar archivos en UTF-8
   "python.envFile": "${workspaceFolder}\\.env",
-  "files.encoding": "utf8"
+  "files.encoding": "utf8",
+  "python-envs.pythonProjects": []
 }
