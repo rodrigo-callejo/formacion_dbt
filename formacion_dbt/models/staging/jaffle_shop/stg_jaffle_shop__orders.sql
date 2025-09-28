@@ -3,8 +3,8 @@ with source as (
   ),
   renamed as (
       select
-          {{ adapter.quote("id") }},
-        {{ adapter.quote("user_id") }},
+          {{ adapter.quote("id") }} as order_id,
+        {{ adapter.quote("user_id") }} as customer_id,
         {{ adapter.quote("order_date") }},
         {{ adapter.quote("status") }},
         {{ adapter.quote("_etl_loaded_at") }}

@@ -1,4 +1,4 @@
--- {{ config(enabled=false) }}
+ {{ config(enabled=true) }}
 
 with customers as (
 
