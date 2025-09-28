@@ -1,3 +1,5 @@
+-- {{ config(enabled=false) }}
+
 with customers as (
 
      select * from {{ ref('stg_jaffle_shop__customers') }}
